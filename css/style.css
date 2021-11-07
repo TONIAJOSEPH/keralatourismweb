@@ -1,0 +1,257 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+} 
+body{
+   background-color: red;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+} 
+.navbar-nav h5{
+text-align: center;
+}
+
+.login{
+    float: right;
+    border: 2px solid green;
+    background-color: grey;
+    height: 21em;
+    margin-top: 100px;
+    margin-right: 400px;
+    margin-bottom: 30px;
+    padding: 30px;
+    /* text-align: center; */
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: inset -5px -5px rgba(0,0,0,.5);
+    border-radius: 25px;
+    
+
+}
+.login h2{
+    text-align: center;
+    color: wheat;
+}
+.login input{
+    height: 1.5em;
+    border: none;
+}
+.login #login-button{
+    width: 100%; 
+    height: 1.8em;
+    color: white;
+    background-color: dodgerblue;
+    /* border: 1px solid wheat; */
+    border-radius: 25px;
+    outline: none;
+   
+    
+}
+#login-button:hover{
+    cursor: pointer;
+    background-color:rgba(0,0,0,.2);
+}
+.box{
+    border-radius: 25px;
+    border: none;
+   outline: none;
+  color: black;
+  font-size: 1rem;
+  padding: 12px;
+}
+.signup{
+
+    color: white;
+   
+    border-radius: 25px;
+    border: 2px solid green;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: inset -5px -5px rgba(0,0,0,.5);
+   
+}
+.signup #signup-button{
+    color: white;
+    background-color: dodgerblue;
+    /* border: 1px solid wheat; */
+    border-radius: 25px;
+    outline: none;
+   
+}
+/* .box{
+    border-radius: 25px;
+    border: none;
+   outline: none;
+  color: black;
+  font-size: 1rem;
+  padding: 12px;
+} */
+/* #signup-button:hover{
+    cursor: pointer;
+    background-color:rgba(0,0,0,.2);
+} */
+}
+.login-cont{
+        line-height: normal;
+        border-radius: 20px;
+        
+}
+.login-misc a{
+   /* margin-bottom: 10px; */
+   text-decoration: none;
+   color:red;
+   
+}
+footer{
+    background-color: rgba(0,0,0,.2);
+    color: white;
+    text-align: center;
+    height: 2em;
+}
+/* footer h4{
+ 
+} */
+ .signup{
+    float: right;
+    border: 2px solid green;
+    background-color: rgba(0,0,0,.5);
+    height: 30em; 
+    margin-top: 100px;
+    margin-right: 400px;
+    margin-bottom: 10px;
+    padding: 30px;
+    /* text-align: center; */
+    color:wheat;
+    
+
+}
+.signup h2{
+    text-align: center;
+}
+.signup input{
+    height: 1.5em;
+    width: 100%;
+}
+.signup #signup-button{
+    width: 100%; 
+    height: 1.8em;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    outline: none;
+   
+    
+}
+
+#signup-button:hover{
+    cursor: pointer;
+    background-color:rgba(0,0,0,.2);
+}
+
+
+.signup-cont{
+        line-height: normal;
+} 
+.signup-misc{
+    color: white;
+}
+.signup-misc a{
+   /* margin-bottom: 10px; */
+   text-decoration: none;
+   color:red;
+   
+}
+/* .alappey{
+    padding-top: 100px;
+}
+.alappey img{
+    margin-left: 50px;
+    margin-top: 30px; 
+    
+}
+.alappey heading{
+    color: black;
+}
+.alappuzha #des{
+    border: 1px solid red;
+    color: black;
+    margin-right: 300px;
+    margin-bottom: 5px;
+    float: right;
+    width: 50%;
+} */
+.districts{
+margin-top: 500px;
+padding-right: 50px;
+}
+.district h2{
+    padding-left: 400px;
+}
+.kasar{
+    background-image: url('../images/kasargod/kasar.jfif');
+    padding-top: 500px; 
+    background-repeat: no-repeat;
+}
+/* .carousel slide{
+     height: 100%; 
+} */
+.carousel-inner{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+} 
+/* .carousel-item img{
+/* height: 80vh; 
+}   */
+
+.carousel-caption h5{
+    color: white;
+    font-family: cursive;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 500px;
+    font-weight: bold;
+}
+.carousel-caption{
+    bottom: 900px;
+    margin: 200px;
+    font-size: .5em;
+    color: blue;
+}
+.imgtxt{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+color: beige;
+}
+.dis{
+    text-align: center;
+    color: white;
+}
+.card-text{
+text-align: justify;
+}
+.alapy h3{
+    text-align: center;
+    color: white;
+}
+ .kerala{
+     background-color:black;
+    color:white;
+    text-align: center;
+  padding-top: 2px;
+} 
+/* .carousel-caption h6{
+    color: black;
+    font-family: cursive;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+} */
