@@ -37,7 +37,7 @@ text-align: center;
     height: 1.5em;
     border: none;
 }
-.login #login-button{
+.login #submit{
     width: 100%; 
     height: 1.8em;
     color: white;
@@ -48,7 +48,8 @@ text-align: center;
    
     
 }
-#login-button:hover{
+
+#submit:hover{
     cursor: pointer;
     background-color:rgba(0,0,0,.2);
 }
@@ -70,12 +71,12 @@ text-align: center;
     box-shadow: inset -5px -5px rgba(0,0,0,.5);
    
 }
-.signup #signup-button{
+ .signup #submit{
     color: white;
     background-color: dodgerblue;
     /* border: 1px solid wheat; */
     border-radius: 25px;
-    outline: none;
+    outline: none; 
    
 }
 /* .box{
@@ -86,10 +87,10 @@ text-align: center;
   font-size: 1rem;
   padding: 12px;
 } */
-/* #signup-button:hover{
+ /* #signup-button:hover{
     cursor: pointer;
     background-color:rgba(0,0,0,.2);
-} */
+}  */
 }
 .login-cont{
         line-height: normal;
@@ -115,7 +116,7 @@ footer{
     float: right;
     border: 2px solid green;
     background-color: rgba(0,0,0,.5);
-    height: 30em; 
+    height: 35em; 
     margin-top: 100px;
     margin-right: 400px;
     margin-bottom: 10px;
@@ -125,28 +126,146 @@ footer{
     
 
 }
+/* input #pswd{
+    position: relative;
+} */
+  /* password strength  */
+  #show{
+      position: relative;
+  }
+ .hideshowbtn{
+      position: absolute; 
+       top: 70%;
+      right: 41%; 
+     
+    
+     text-align: center; 
+    font-size: 15px;
+    font-weight: bold;
+    color: green;
+    right: 450px;
+    top: 350px;
+      /* padding-right : 100px;     */
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* position: fixed;  */
+      /* display: none;   */ 
+  } 
+  .indicator{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 10px;
+      display: none;
+     
+  }
+  .indicator span{
+      width: 100%;
+      height: 100%; 
+      background: lightgray;
+      border-radius: 5px;
+      /* margin-top: -35px; */
+      position: relative; 
+        /* display: none;   */
+  }
+    /* .span weak{
+ padding: -10px;
+ margin-top: 10px;
+  }  */
+    .indicator span.medium{
+    margin: 0 3px;
+  }  
+  /* .span strong{ 
+
+  } */ 
+  .indicator span:before{
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+     
+  }
+  .indicator span.active.weak:before{
+      background: red;  
+  }
+  .indicator span.active.medium:before{
+    background: orange;
+}
+.indicator span.active.strong:before{
+    background: green;
+}
+
+.test{
+     /* margin-top: -30px;  */
+     margin-bottom: 0px;
+     font-size: 20px;
+     font-weight: 500;
+       display: none;   
+}
+
+.test weak{
+    color: red;
+    
+}
+.test medium{
+    color: orange;
+}
+.test strong{
+    color: green;
+}
+
+
+
+  /* password strength */
 .signup h2{
     text-align: center;
 }
 .signup input{
-    height: 1.5em;
+    height: 10px;
     width: 100%;
 }
-.signup #signup-button{
+ .signup #submit{
     width: 100%; 
     height: 1.8em;
     color: white;
     background-color: dodgerblue;
     border: none;
-    outline: none;
+    outline: none; 
    
     
 }
-
-#signup-button:hover{
+.signup #submit:hover{
     cursor: pointer;
     background-color:rgba(0,0,0,.2);
 }
+
+.signup div i {
+    position: absolute;
+    padding: 5px;
+  }
+  .failure-icon,
+#error{
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+/* .error {
+  font-size: 14.5px;
+  margin-top: 5px;
+} */
+ .success-icon,
+.failure-icon {
+   right: 0; 
+  opacity: 0;
+} 
+
+
 
 
 .signup-cont{
@@ -161,25 +280,7 @@ footer{
    color:red;
    
 }
-/* .alappey{
-    padding-top: 100px;
-}
-.alappey img{
-    margin-left: 50px;
-    margin-top: 30px; 
-    
-}
-.alappey heading{
-    color: black;
-}
-.alappuzha #des{
-    border: 1px solid red;
-    color: black;
-    margin-right: 300px;
-    margin-bottom: 5px;
-    float: right;
-    width: 50%;
-} */
+
 .districts{
 margin-top: 500px;
 padding-right: 50px;
@@ -255,3 +356,67 @@ text-align: justify;
     letter-spacing: 2px;
     margin-top: 25px;
 } */
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+
+
+}
+.container.mycard{
+    position: relative;
+    max-width: 150px;
+    height: 420px;
+    background-color: white;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 50px rgba(0,0,0,.5);
+    transition: .4s ease-in-out;
+
+
+}
+.container.mycard:hover{
+    height: 420px;
+}
+.container.mycard.cimg{
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 3px 50px rgba(0,0,0,.5);
+}
+.container.mycard.cimg img{
+max-width: 100%;
+height: 100%;
+border-radius: 6px;
+
+}
+.container.mycard.cdetail{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    text-align: justify;
+}
+.container.mycard:hover.cdetail{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+}
+
+.det{
+    text-align: justify;
+}

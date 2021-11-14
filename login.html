@@ -28,13 +28,13 @@
                            <a class="navbar-brand" href="index.html">Home</a>
                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                              <li class="nav-item">
-                               <a class="nav-link active" aria-current="page" href="login.html">Signin</a>
+                               <a class="nav-link active" aria-current="page" href="#">Signin</a>
                              </li>
                              <li class="nav-item">
                                <a class="nav-link active" href="signup.html">Signup</a>
                              </li>
                              <li class="nav-item">
-                               <a class="nav-link active" href="districts.html">Districts</a>
+                               <a class="nav-link active" href="">Districts</a>
                              </li> 
                            </ul>
                            <!-- <form class="d-flex">
@@ -46,22 +46,24 @@
                      </nav>
     <!-- navbar ends -->
      <!-- form -->
-     <form action="districts.html" class="login">
+     <form action="districts.html" class="login" onsubmit="return validate()">
       <h2> login</h2>
       <br>
       <div class="login-cont">
           <!-- <label>username</label> -->
           <br>
-          <input type="text" placeholder="username" class="box">
+          <input type="text" placeholder="username" class="box" id="uname" onkeyup="validate()">
+          <p id="errm"></p>
       </div>
       <div class="login-cont">
           <!-- <label>password</label> -->
-          <br>
-          <input type="text" placeholder="password" class="box">
-          <br>
+          
+          <input type="password" placeholder="password" class="box" id="pwd" onkeyup="validate()">
+          <p id="errm1"></p>
+        </div>
           <div class="login-cont">
-              <br>
-          <button id="login-button">login</button>
+              
+          <button id="submit">login</button>
           </div>
           <br>
           <div class="login-misc">
@@ -69,10 +71,10 @@
               <a href="signup.html">signup</a>
           </div>
           
-      </div>
+      
   </form>
 <!-- form ends -->
-
+<script src="script.js"></script>
     
 </body>
 </html>
