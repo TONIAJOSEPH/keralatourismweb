@@ -161,16 +161,18 @@ else if(p.length!=10){
          test.style.display="block";
          test.textContent="weak";
          test.classList.add("weak");
-         
+         return false;
      }
      if(level==2){
        medium.classList.add("active");
         // test.style.display="block";     
          test.textContent="medium";
          test.classList.add("medium");
+         return false;
      }else{
         medium.classList.remove("active");
         test.classList.remove("medium");
+        
     }
     
  if(level==3){
@@ -180,9 +182,11 @@ else if(p.length!=10){
         // test.style.display="block";
         test.classList.add("strong");
         
+        
     }else{
         strong.classList.remove("active");
         test.classList.remove("strong");
+        return false;
     }
     
     // hideshowbtn.style.display = "block";
@@ -197,14 +201,15 @@ else if(p.length!=10){
     //     }
     //   return true; 
     //  }
-    return true;
+     return true;
     } 
  else{
     indicator.style.display = "none";
     test.style.display = "none";
     hideshowbtn.style.display = "none";
     return false;
-}
+    }
+    // return true;
  }
  function rpassvalidation(){
     if(rpswd.value!=""){
