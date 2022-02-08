@@ -32,6 +32,8 @@ text-align: center;
 .login h2{
     text-align: center;
     color: wheat;
+    margin-bottom: -30px;
+
 }
 .login input{
     height: 1.5em;
@@ -69,6 +71,7 @@ text-align: center;
     border: 2px solid green;
     background-color: rgba(0,0,0,.5);
     box-shadow: inset -5px -5px rgba(0,0,0,.5);
+    /* margin-bottom: 100px; */
    
 }
  .signup #submit{
@@ -79,28 +82,19 @@ text-align: center;
     outline: none; 
    
 }
-/* .box{
-    border-radius: 25px;
-    border: none;
-   outline: none;
-  color: black;
-  font-size: 1rem;
-  padding: 12px;
-} */
- /* #signup-button:hover{
-    cursor: pointer;
-    background-color:rgba(0,0,0,.2);
-}  */
-}
+
+
 .login-cont{
         line-height: normal;
         border-radius: 20px;
+       /* margin-top: -10px; */
         
 }
 .login-misc a{
    /* margin-bottom: 10px; */
    text-decoration: none;
    color:red;
+   /* padding-bottom: -100px; */
    
 }
 footer{
@@ -126,9 +120,7 @@ footer{
     
 
 }
-/* input #pswd{
-    position: relative;
-} */
+
   /* password strength  */
   #show{
       position: relative;
@@ -216,10 +208,8 @@ footer{
 .test strong{
     color: green;
 }
-
-
-
   /* password strength */
+
 .signup h2{
     text-align: center;
 }
@@ -255,18 +245,12 @@ footer{
   color: green;
 }
 
-/* .error {
-  font-size: 14.5px;
-  margin-top: 5px;
-} */
+
  .success-icon,
 .failure-icon {
    right: 0; 
   opacity: 0;
 } 
-
-
-
 
 .signup-cont{
         line-height: normal;
@@ -275,7 +259,7 @@ footer{
     color: white;
 }
 .signup-misc a{
-   /* margin-bottom: 10px; */
+   padding-bottom: -100px;
    text-decoration: none;
    color:red;
    

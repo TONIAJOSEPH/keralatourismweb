@@ -31,12 +31,12 @@
                              <li class="nav-item">
                                <a class="nav-link active" aria-current="page" href="login.html">Signin</a>
                              </li>
-                             <li class="nav-item">
+                             <!-- <li class="nav-item">
                                <a class="nav-link active" href="#">Signup</a>
                              </li>
                              <li class="nav-item">
                                <a class="nav-link active" href="">Districts</a>
-                             </li> 
+                             </li>  -->
                            </ul>
                            <!-- <form class="d-flex">
                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -47,13 +47,14 @@
                      </nav>
                      <!-- form strts -->
                      <form action="login.html" class="signup" onsubmit="return validatesignup() && emailvalidate() && phonevalidate() && passvalidation()">
-                            <h2>signup</h2>
+                      
+                      <h2>signup</h2>
                             <br>
                             <div class="signup-cont">
                                     <!-- <label>name</label> -->
                                     <!-- <i class="fas fa-user"></i> -->
                                     <input type="text" placeholder="name" class="box" id="name" onkeyup="uservalidation()">
-                                   
+                                    
                                     <p id="error"></p>
                                 </div>
                                 <div class="signup-cont">
@@ -77,7 +78,7 @@
                                 <!-- password strength-->
                                 
                                 <input type="password" placeholder="password" class="box" id="pswd" onkeyup="passvalidation()">
-                                 <span class="hideshowbtn">SHOW</span>
+                                 <!-- <span class="hideshowbtn">SHOW</span> -->
                                  <p id="error3"></p>
                               </div>
                                 <div class="indicator">
@@ -100,7 +101,7 @@
                               </div>
                               
                                 <div class="signup-cont">
-                                    
+                                 
                                 <button id="submit" onclick="butvalidate()">signup</button>
                                 </div>
                                 
@@ -113,6 +114,7 @@
                         </form>
                      <!-- form ends -->
     <!-- navbar ends -->
+    <!-- <script src="script.js"></script> -->
     <script src="script1.js"></script>
 </body>
 </html>

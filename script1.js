@@ -69,6 +69,12 @@ function validatesignup(){
       rpswd.style.border = "2px solid red";
       return false;
       }
+      else if(rpswd.value!=pswd.value){
+        error4.innerHTML = "password not match";
+        rpswd.style.border = "2px solid red";
+        return false;
+     }
+
  else{
       return true;
     }
@@ -88,7 +94,7 @@ function uservalidation(){
 }
 function emailvalidate(){
     // clearerrors();
-    let regexp=/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
+    let regexp=/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
     if(regexp.test(email.value)){
         error1.innerHTML=""; 
          email.style.border = "2px solid green";
@@ -217,7 +223,9 @@ else if(p.length!=10){
            rpswd.style.border = "2px solid green";
            return false;
  }
+ 
  else{
+
     return true;
  }
 }
@@ -251,4 +259,53 @@ function remove(){
        error4.innerHTML = "re-password field cannot be empty";
       error4.style.color ="red";
       rpswd.style.border = "2px solid red";
+}
+
+
+
+//login................................
+let uname = document.getElementById("uname");
+let pwd = document.getElementById("pwd");
+let errm = document.getElementById("errm");
+let errm1 = document.getElementById("errm1");
+let errorlogin =document.getElementById("errorlogin");
+let loginname = document.getElementById("name").value;
+let loginpass = document.getElementById("pswd").value;
+
+function clearerror(){
+    errm.innerHTML="";
+    uname.style.border="2px solid green"; 
+    errm1.innerHTML="";
+    pwd.style.border="2px solid green"; 
+}  
+function validate(){
+    clearerror();
+    if(uname.value=="" && pwd.value==""){
+      
+         uname.style.border="2px solid red";
+         errm.innerHTML="username cannot be empty";
+         errm.style.color="red";
+         pwd.style.border="2px solid red";
+         errm1.innerHTML="password cannot be empty";
+         errm1.style.color="red";
+         return false;
+    }
+     else if(pwd.value==""){
+        
+         pwd.style.border="2px solid red";
+         errm1.innerHTML="password cannot be empty";
+         errm1.style.color="red";
+        return false;                                 //name,pswd
+    }
+    else if(uname.value!=loginname && pwd.value!=loginpass){
+        errorlogin.innerHTML="invalid login";
+        console.log("hello");
+    //     pwd.style.border="2px solid red";
+    //      errm1.innerHTML="password is too short";
+    //      errm1.style.color="red";
+         return false;
+     }
+    else{
+        return true;
+    }
 }
